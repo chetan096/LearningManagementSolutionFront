@@ -39,11 +39,7 @@ export class LectureComponent implements OnInit {
           this.lectures = data.lecture;
           if (this.lectures.length == 0) {
             alert('No lectures in this course yet')
-<<<<<<< HEAD
             
-=======
-            this.router.navigate(['/course'])
->>>>>>> 4bee09653cc243c2e7fdf946034d3fb31a29713c
           }
         }, error =>{
           this.errorMessage = <any>error

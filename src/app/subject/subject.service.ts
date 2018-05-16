@@ -4,11 +4,7 @@ import { Observable } from 'rxjs/Rx';
 
 @Injectable()
 export class SubjectService {
-<<<<<<< HEAD
   BASE_URL='https://frozen-dusk-16665.herokuapp.com/subjects'
-=======
-  BASE_URL='http://localhost:8000/subjects'
->>>>>>> 4bee09653cc243c2e7fdf946034d3fb31a29713c
   constructor(private httpClient:HttpClient) { }
 
   getSubjects():Observable<any>{

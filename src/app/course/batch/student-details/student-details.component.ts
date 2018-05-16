@@ -39,10 +39,6 @@ export class StudentDetailsComponent implements OnInit {
             console.log(data)
             if(this.students.length==0){
               alert('No student in this batch')
-<<<<<<< HEAD
-=======
-              this.router.navigate(['/course'])
->>>>>>> 4bee09653cc243c2e7fdf946034d3fb31a29713c
             }
          
       },error=>{

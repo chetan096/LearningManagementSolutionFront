@@ -30,10 +30,6 @@ export class StudentComponent implements OnInit {
        this.errorMessage=<any>error;
      })
   }
-<<<<<<< HEAD
-=======
-
->>>>>>> 4bee09653cc243c2e7fdf946034d3fb31a29713c
   openAddStudentPage(){
     this.router.navigate(['addStudent']);
   }

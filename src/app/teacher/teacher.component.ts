@@ -18,12 +18,7 @@ export class TeacherComponent implements OnInit {
     this.teacherService.getTeachers().subscribe((data: any) => {
       this.teachers = data.teachers;
       if (this.teachers.length == 0) {
-<<<<<<< HEAD
         alert('No teacher found ');
-=======
-        alert('No subjects found ');
-        this.router.navigate([''])
->>>>>>> 4bee09653cc243c2e7fdf946034d3fb31a29713c
       }
 
     }, error => {

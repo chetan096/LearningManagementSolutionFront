@@ -19,10 +19,6 @@ export class SubjectComponent implements OnInit {
            this.subjects=data.subjects;
            if(this.subjects.length==0){
              alert('No subjects found ');
-<<<<<<< HEAD
-=======
-             this.router.navigate([''])
->>>>>>> 4bee09653cc243c2e7fdf946034d3fb31a29713c
            }
            
     },error=>{

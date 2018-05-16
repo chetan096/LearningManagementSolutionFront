@@ -8,11 +8,7 @@ import 'rxjs/add/operator/do';
 @Injectable()
 export class CourseService {
 
-<<<<<<< HEAD
   BASE_URL = 'https://frozen-dusk-16665.herokuapp.com/courses';
-=======
-  BASE_URL = 'http://localhost:8000/courses';
->>>>>>> 4bee09653cc243c2e7fdf946034d3fb31a29713c
   constructor(private httpClient: HttpClient) { }
 
   getCourses(): Observable<any> {

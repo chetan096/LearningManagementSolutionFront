@@ -1,0 +1,11 @@
+<button class="btn btn-primary" style="float:right" (click)="openAddSubjectPage()">Add New Subject</button>
+<br/><br/><br/>
+<div *ngFor="let subject of subjects" class="col-sm-3">
+    <div class="panel panel-primary">
+      <div class="panel-heading">{{subject.name}}</div>
+      <div class="panel-body">
+          <h4 style="color:black"> <span style="color:brown">Subject ID:</span>{{subject.id}}</h4>
+          <h4 style="color:black"> <span style="color:brown">Subject Name:</span>{{subject.name}}</h4>
+        </div>
+    </div>
+  </div>

@@ -1,0 +1,7 @@
+<h1 style="text-align:centre">Register New Course</h1><br/><br>
+<div>
+  <label style="color:brown" for="name">Course Name:</label>
+  <input type="text" class="form-control" id="name"[(ngModel)]="courseName"><br/><br/>
+  <button class="btn btn-primary" (click)="addCourse()">Add Course</button>
+  <a class="btn btn-primary" [routerLink]="['/course']">Back</a>
+</div>

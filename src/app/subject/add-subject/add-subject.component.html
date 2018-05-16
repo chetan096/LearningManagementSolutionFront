@@ -1,0 +1,13 @@
+<h1 style="text-align:centre">Register New Subject</h1><br/><br>
+<div>
+  <label style="color:brown" for="name">Subject Name:</label>
+  <input type="text" class="form-control" id="name"[(ngModel)]="subjectName"><br/><br/>
+  <label style="color:brown" for="name">Course Name:</label>
+  <select [(ngModel)]="courseId" class="form-control">
+      <option *ngFor="let course of courses" [value]="course.id">
+        {{course.name}}
+      </option>
+  </select>
+  <br/><br/>
+  <button class="btn btn-primary" (click)="addSubject()">Register</button>
+</div>

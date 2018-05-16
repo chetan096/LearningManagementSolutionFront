@@ -1,0 +1,12 @@
+<button class="btn btn-primary" style="float:right" (click)="addStudentsToBatch()">Add students to batch</button>
+<div *ngIf="errorMessage"><h3>Error while geting Batches</h3></div>
+<div *ngFor="let student of students" class="col-sm-3">
+  <div class="panel panel-primary">
+    <div class="panel-heading">{{student.name}}</div>
+    <div class="panel-body">
+        <h4 style="color:black"> <span style="color:brown">Student ID :</span>{{student.id}}</h4>
+        <h4 style="color:black"> <span style="color:brown">Batch Name :</span>{{student.batch.name}}</h4>
+      </div>
+  </div>
+  
+</div>

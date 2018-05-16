@@ -1,0 +1,13 @@
+<button class="btn btn-primary" style="float:right" (click)="openAddBatchPage()">Add New Batch</button>
+<br/><br/><br/>
+<div *ngIf="errorMessage"><h3>Error while geting Batches</h3></div>
+<div *ngFor="let batch of batches" class="col-sm-3">
+  <div class="panel panel-primary">
+    <div class="panel-heading">{{batch.name}}</div>
+    <div class="panel-body">
+       <a class="btn btn-success" (click)="getLectures(batch.id)">Lectures</a>
+       <a class="btn btn-success" (click)="getStudents(batch.id)">Students</a>
+    </div>
+  </div>
+
+</div>

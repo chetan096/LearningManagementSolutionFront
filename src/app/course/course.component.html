@@ -1,0 +1,12 @@
+<h2 style="color:brown">Courses</h2>
+<button class="btn btn-primary" style="float:right" (click)="openAddCoursePage()">Add New Course</button>
+<br/><br/><br/>
+<div *ngIf="errorMessage"><h3>Error while geting courses</h3></div>
+<div *ngFor="let course of courses" class="col-sm-3">
+  <div class="panel panel-primary">
+    <div class="panel-heading">{{course.name}}</div>
+    <div class="panel-body">
+       <a class="btn btn-success" [routerLink]="['/course',course.id]">Batches</a>
+    </div>
+  </div>
+</div>

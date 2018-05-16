@@ -1,0 +1,13 @@
+<h1 style="text-align:centre">Register New Teacher</h1><br/><br>
+<div>
+  <label style="color:brown" for="name">Teacher Name:</label>
+  <input type="text" class="form-control" id="name"[(ngModel)]="teacherName"><br/><br/>
+  <label style="color:brown" for="name">Subject Name:</label>
+  <select [(ngModel)]="subjectId" class="form-control">
+      <option *ngFor="let subject of subjects" [value]="subject.id">
+        {{subject.name}}
+      </option>
+  </select>
+  <br/><br/>
+  <button class="btn btn-primary" (click)="addTeacher()">Register</button>
+</div>

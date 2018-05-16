@@ -1,0 +1,12 @@
+<button class="btn btn-primary" style="float:right" (click)="openAddTeacherPage()">Add New Teacher</button>
+<br/><br/><br/>
+<div *ngFor="let teacher of teachers" class="col-sm-3">
+    <div class="panel panel-primary">
+      <div class="panel-heading">{{teacher.name}}</div>
+      <div class="panel-body">
+          <h4 style="color:black"> <span style="color:brown">Teacher ID:</span>{{teacher.id}}</h4>
+          <h4 style="color:black"> <span style="color:brown">Teacher Name:</span>{{teacher.name}}</h4>
+          <h4 style="color:black"> <span style="color:brown">Subject Name:</span>{{teacher.subject.name}}</h4>
+        </div>
+    </div>
+  </div>
